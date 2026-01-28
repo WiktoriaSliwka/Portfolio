@@ -1,44 +1,33 @@
+*{
+    font-family: "Gravitas One", serif;
+}
 .title {
-    margin-top: 100px;
-    font-size: 60px;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    margin-top: 2vh;
+    font-size: 100px;
     font-weight: 700;
     color: #333;
     line-height: 1.2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .project-img {
-    
     margin-top: 50px;
-    width: auto;     
-    max-width: 300px; 
     height: auto;
     object-fit: contain;
 }
+
 .project-placeholder {
-    width: 100%;
-    padding-top: 100%; /* This creates a perfect square */
-    background-color: #e0e0e0; /* Placeholder color */
-    border: 3px solid #333; /* Border color and thickness */
-    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    width: 30vw;
+    min-height: 300px;
+    background-color: #dfabc3; 
+    border: 3px solid #333; 
     position: relative;
 }
 
-/* Optional: add different colors to visualize */
-.project-placeholder:nth-child(1) {
-    background-color: #ffcdd2; /* Light red */
-}
-
-.project-placeholder:nth-child(2) {
-    background-color: #c8e6c9; /* Light green */
-}
-
-.project-placeholder:nth-child(3) {
-    background-color: #bbdefb; /* Light blue */
-}
 .homework-section {
     padding: 50px 0;
 }
-
 .homework-card {
     margin-bottom: 30px;
     text-align: center;
@@ -46,7 +35,9 @@
 
 .homework-card img {
     margin-bottom: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;      
+    min-width: 300px; 
+   
 }
 
 .homework-card img:hover {
@@ -56,4 +47,32 @@
 .homework-text {
     font-size: 16px;
     margin-top: 10px;
+}
+
+.container{
+    padding-top: 100px; 
+    padding-bottom: 50px;
+}
+
+.header{
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.header2{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.documentation {
+     font-size: 18px;
+     font-weight: bold;
+    
+}
+
+.description{
+     font-size: 18px;
+     font-weight: bold;
+    
 }

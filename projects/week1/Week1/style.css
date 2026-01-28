@@ -1,0 +1,53 @@
+
+.bookshelf {
+    width: 550px;
+    height:10px;
+    top: auto;
+    bottom: 75px;
+    text-align: center; 
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    background-color: brown;
+    gap:0;
+    
+}
+
+.bookshelf a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    writing-mode: vertical-rl;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: rgb(72, 33, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.image1, .image2, .image3, .image4, .image5{
+      width: auto;
+      height: 600px;
+      margin: 0;
+      padding: 0;
+      writing-mode: vertical-rl;
+      display: block;
+      justify-content: center;
+}
+
+.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover {
+    background-color: rgb(151, 173, 184);
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+

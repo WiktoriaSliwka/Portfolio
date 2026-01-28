@@ -2,11 +2,17 @@
 Personal Portfolio 
 https://youtu.be/eow125xV5-c?si=M14g3Q_DT7JaCSwy - bootstrap
 
-Documentation 
-Firstly In the index.html i added bootstrap for css to make the cross platform web development more seamless. 
-I added a nva bar on top and made it stick to the top of the page so when the user scrolls it will stay there and when used on a mobile/ small screen the nav bar turns into a navbar symbol also known as the hamburger 
-
-i added a title with my name and placed an image link next to it with a placeholder image
-Within the project section i created a 3X3 grid to hold the 9 weekly projects with a sample placeholder image 
-
-Home and projects are within their own <section> 
+Week1-
+I can creating a styled website page that displays a poem. 
+Firstly I designed the page on paper to see the general layout. 
+I added all the images and text. 
+I placed all the images into a div to be able to place them accurately on the screen. 
+I changed the fonts and experimented with different ones until I decided on one that I felt fit the style I had in mind. 
+I struggled with the sword positioning as in my first draft the images were not within a class. (draft1code.png)
+Week2-
+I'm creating a bookshelf that displays my current 5 favorite books(1984,Animal Farm, Butter, Tomorrow Tomorrow, Tomorrow, The Vegetarian). The landing page will be a bookshelf with the spin showing the book title. The Website user can click on which book they are interested in and then take the user to the correct website page. Displayed on each page there will be a blurb, my personal review and cover image. I will aim to design each book page in the style of the story which will allow me to experiment with different styles. I firstly created the bookshelf and books and ensured each hyper-link functioned as intended. I created a basic webpage for each book containing the blurb, review and cover image. Next I focused on positioning by creating each page into a container allowing me to move the page contents freely. I placed the cover image on the left hand side and the blurb and review in the middle of the screen. The title is placed on top and spans the whole screen. Once the webpages are layed out correctly I focused on designing each page making it look more attractive. Firstly I added fonts to match each book, added a border to each cover image and changed the background color. I then decided to add navigation buttons sp the user can go back and forth between pages. On some pages the buttons were not directly below the text but on the side as it has to be placed outside the container class. I decided to create backgrounds using css. Firstly I added an ascii art background to book 3 which i found online. I pasted in in and changed the color and size to fit the screen and match the font. (https://emojicombos.com/wave-ascii-art) next I decided to create a floral backgrounds using for book 1. For this I followed a youtube tutorial A repetitive brutalist pattern for book 2 and 4. for book five I decided to keep the background simple. After after my pages were completed I moved around the back buttons to the top of the page and changed the container size so my book image would be larger.
+Week3- 
+I experimented with CSS positioning. I firstly created all my elements in html before editing them in css. Positioning all the elements and editing the size and getting to know how to use border-radius more effectively and using absolute positioning. I found the z-index to be the best way to layer the elements.
+Week4- Here are the following figma designs of my portfolio and other figma designs and prototypes. 
+Week5- No task 
+Week6- Firstly I created the hands(hour,min,sec) in html. In js to display a fake time to ensure the hands are placed correctly and centering everything in the centre of the page. Now that the clock looks right and i added the notches that display the minutes using createElement("span"). Using query.Selector i fetched the correct GMT time to be displayed on the clock alongside the Weekday and displaying if its AM or PM. Once the ui was working correcting I changed the clock to look like an analog clock using CSS shapes and then added some animation so that the bells mode move and so would the bell ringer.

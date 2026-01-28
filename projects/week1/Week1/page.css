@@ -1,0 +1,195 @@
+.ascii-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none; /* Can't click on it */
+}
+
+.ascii-background pre {
+    font-family: monospace;
+    font-size: 15px; /* Adjust size as needed */
+    line-height: 1;
+    color: rgb(38, 28, 225); 
+    margin: 0;
+    white-space: pre;
+}
+
+.container{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      gap: 40px;
+}
+
+
+
+.cover img{
+    width: 300px;
+    height: auto; 
+}
+.cover {
+    grid-row: 2/-1;
+    grid-column: 1;
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+    padding:30px;
+   
+
+}
+
+.title{
+    grid-column: 1/-1;  /* start and end column to span all rows */
+    grid-row: 1;
+    text-align: center;
+}
+
+/* title style */
+.one{
+ color: rgb(255, 255, 255);
+ text-shadow: 4px 0 0 #2c136b, 0 -4px 0 #2c136b, 0 4px 0 #2c136b, -4px 0 0 #2c136b;
+ font-family: "Aladin", cursive;
+ font-size: 60px;
+ margin-top: 25px;
+ font-weight: bold;
+}
+
+.two{
+ color: rgb(209, 245, 9);
+ text-shadow: 4px 0 0 #2c136b, 0 -4px 0 #2c136b, 0 4px 0 #2c136b, -4px 0 0 #2c136b;
+ font-family: "Gravitas One", serif;
+  font-size: 45px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.three{
+ color: rgb(18, 21, 164);
+ text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ font-family: "Pixelify Sans", sans-serif;
+ font-weight: 700;
+ font-size: 60px;
+ margin-top: 25px;
+ font-weight: bold;
+}
+.four{
+ color: rgb(97, 128, 64);
+ text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+    margin-top: 25px;
+    
+}
+.five{
+ color: rgb(242, 232, 30);
+ text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ font-family: "Gravitas One", serif;
+ font-weight: 400;
+font-size: 45px;
+margin-top: 25px;
+font-weight: 400;
+}
+
+
+.blurb{
+    grid-row: 2;
+    grid-column: 2;
+    
+}
+.review{
+    grid-row: 3;
+    grid-column: 2;
+}
+   
+
+/* blurb and review style */
+.a {
+    font-family: "Aladin", cursive;
+    color: rgba(118, 101, 46, 0.799);
+    font-size: 30px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+ .b{
+    font-family: "Gravitas One", serif;
+    color: rgb(253, 252, 252);
+    text-shadow: 1px 0 0 #2c136b, 0 -1px 0 #2c136b, 0 1px 0 #2c136b, -1px 0 0 #2c136b;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+}
+ .c {
+    font-family: "Jersey 25", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 30px;
+    font-weight: 700;
+} 
+.d{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: rgb(41, 38, 38);
+    text-shadow: 1px 0 0 #2c136b, 0 -1px 0 #2c136b, 0 1px 0 #2c136b, -1px 0 0 #2c136b;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+}  
+.e {
+    font-family: "Gravitas One", serif;
+    color: rgb(192, 177, 177);
+    font-size: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50px; /* This creates the pill shape! */
+    background-color: rgb(101, 101, 104);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(151, 173, 184);
+    transform: scale(1.05);
+}
+
+.backdrop{
+    background-color: hsl(0, 4%, 70%);
+    background-image: 
+    linear-gradient(
+        -45deg,
+        transparent 75%,
+        hsl(0, 30%, 35%) 75%),
+        linear-gradient(
+        45deg,
+        transparent 75%,
+        hsl(0, 38%, 56%) 75%) ,
+        linear-gradient(
+        -135deg,
+        transparent 75%,
+        hsl(0, 3%, 56%) 75%)  ,
+        linear-gradient(
+        135deg,
+        transparent 75%,
+        hsl(0, 6%, 30%) 75%);
+    background-size: 6rem 7rem;
+    background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+
+    /* ai */
+    min-height: 100vh;
+    width: 100%
+
+}
+ body{
+    margin: 0;
+    padding: 0;
+ }
